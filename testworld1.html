@@ -8,6 +8,75 @@
 "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Frole-playing_4261244&psig=AOvVaw1E2gsHR2Sgwr5E0HrvNJ6V&ust=1738445641531000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDssOn0oIsDFQAAAAAdAAAAABAE" />
 </head>
 <style>
+    /* Chat Container */
+.chat-container {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+/* Messages Area */
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual Message */
+.message {
+    max-width: 70%;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+/* User Messages */
+.message.user {
+    align-self: flex-end;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Other Messages */
+.message.other {
+    align-self: flex-start;
+    background-color: #ddd;
+    color: black;
+}
+
+/* Input Area */
+.chat-input {
+    display: flex;
+    border-top: 2px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.chat-input button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
     body {
         font-family: 'Times New Roman';
         background-color: darkgray;
